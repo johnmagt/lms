@@ -127,21 +127,60 @@
 
         <section>
             <iframe width="500px" height="350px" src="https://www.youtube.com/embed/v=HwJin25NdFY" frameborder="0"></iframe>
+            
+        </section>
+        <section>
+            <h3>Aúdio da abertura das Winks</h3>
 
+            <audio controls>
+                <source src="FUNK DAS WINX.m4a" type="audio/mpeg">
+            </audio> 
         </section>
 
     </article>
 
     <article>
-            <svg width="400" height="400">
-                <circle cx="200" cy="100" r="60" stroke="violet" stroke-width="4" fill="white" />
-                <line x1="200" y1="160" x2="200" y2="300" stroke="violet" stroke-width="4" />
-                <line x1="200" y1="299" x2="250" y2="400" stroke="violet" stroke-width="4" />
-                <line x1="200" y1="299" x2="150" y2="400" stroke="violet" stroke-width="4" />
-                <line x1="200" y1="200" x2="150" y2="300" stroke="violet" stroke-width="4" />
-                <line x1="200" y1="200" x2="290" y2="150" stroke="violet" stroke-width="4" />
+        <svg width="400" height="400">
+            <circle cx="200" cy="100" r="60" stroke="violet" stroke-width="4" fill="white" />
+            <line x1="200" y1="160" x2="200" y2="300" stroke="violet" stroke-width="4" />
+            <line x1="200" y1="299" x2="250" y2="400" stroke="violet" stroke-width="4" />
+            <line x1="200" y1="299" x2="150" y2="400" stroke="violet" stroke-width="4" />
+            <line x1="200" y1="200" x2="150" y2="300" stroke="violet" stroke-width="4" />
+            <line x1="200" y1="200" x2="290" y2="150" stroke="violet" stroke-width="4" />
 
-            </svg>
+        </svg>
+    </article>
+
+    <article>
+        <h3>Faça sua inscrição!</h3>
+
+        <form action="/action_page.php" target="_blank" method="GET">
+            <br>
+            Nome:
+            <input type="text" name="firstname" placeholder="Isadora" maxlength="15"> 
+            <br><br>       
+            Sobrenome:
+            <input type="text" name="lastname" value="Brito" readonly>
+            <br><br>
+            Você tem quantos anos?
+            <input type="number" name="idade" min="25000" max="30000">
+            <br><br>
+            Como você encontrou nosso site? <br> <br>
+            <input type="checkbox" name="busca1"> Amigos
+            <input type="checkbox" name="busca2"> Google
+            <input type="checkbox" name="busca2"> Anúncios
+
+            <br> <br>
+            Sexo: <br> <br>
+            <input type="radio" name="sexo1"> Menino <br>
+            <input type="radio" name="sexo2"> Menina <br>
+            <input type="radio" name="sexo1"> Não sei <br> <br>
+            
+            
+
+
+        </form>
+        
     </article>
 
 </body>

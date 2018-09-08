@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Verdana;
+    text-align: center;
+    background-color: pink;
+}
+
+footer{
+    background-image: url("gradient.png");
+}
+
+footer > p{
+    padding: 15px;
+}
+
+header h1{
+    background-color: violet;
+    color:darkmagenta;
+    padding: 20px;
+}
+
+nav ul{
+    margin-top: 30px;
+    border: 2px solid white;
+    padding: 20px;
+}
+
+nav ul li{              
+    list-style: none;
+    display: inline;
+}
+
+nav ul li a{
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color:plum;
+}
+
+article{
+    border-radius: 10px;
+}
+
+article h3{
+    color: blueviolet;
+    padding: 10px;
+    font-size: 3vw;
+}
+
+#temp2{
+    background-color: blueviolet;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+#tam-sub{
+    color: brown;
+    font-size: 16px;
+    padding: 8px;
+}
+
+#border-atencao{
+    border: 12px crimson dashed;
+}
+
+#border-atencao2{
+    border: 10px double purple;
+
+}
+article .inscricao{
+    color: crimson;
+    padding: 10px;
+}
+
+article, section{
+    background-color: white;
+    margin: 20px;
+}
+
+section p{
+    text-align: justify;
+    padding: 3vh;
+    border-radius: 10px;
+    color: blueviolet;
+    font-size: 1.8vw;
+}
+
+article svg{
+    border: 2px solid black;
+}

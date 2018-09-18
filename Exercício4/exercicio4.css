@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.headercima {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.headercima span {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.theworld {
+    letter-spacing: 4px;
+    float: right;
+}
+
+.nave-superior{
+    background-color: #4CAF50;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.nave-superior ul {
+    list-style-type: none;
+}
+
+.nave-superior ul li a{
+    color: white;
+    font-size: 17px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    padding: 20px;
+    float: left;
+}
+
+
+.nave-superior ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-lateral {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 18%
+}
+
+.nav-lateral ul {
+    list-style-type: none;
+    letter-spacing: 0.5px;
+    padding: 18px;
+    overflow: hidden;
+}
+
+.nav-lateral ul .lateral-titulo {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.nav-lateral ul .li-espaco {
+    margin-top: 15px;
+}
+
+.nav-lateral ul li {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.nav-lateral ul li:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.nav-lateral ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown {
+    /* position: relative; */
+}
+
+.dropdown span {
+    float: left;
+    padding: 20px;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.dropdown:hover span {
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    top: 130px;
+    left: 19px;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: rgba(228, 228, 228);
+}
+
+.dropdown-content ul li a{
+    color: black;
+}

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: crimson;
+    color: white;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.drop,
+.drop2,
+.drop3 {
+    float: left;
+}
+
+.drop ul,
+.drop2 ul,
+.drop3 ul,
+nav ul {
+    list-style-type: none;
+}
+
+.drop a,
+.drop2 a,
+.drop3 a {
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.drop .container,
+.drop2 .container,
+.drop3 .container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 700ms;
+    background-color: coral;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.drop .container li,
+.drop2 .container li,
+.drop3 .container li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.drop .container li:hover,
+.drop2 .container li:hover,
+.drop3 .container li:hover {
+    background-color: white;
+    color: black;
+}
+
+.drop:hover .container,
+.drop2:hover .container,
+.drop3:hover .container {
+    max-height: 200px;
+}
+
+.nav-esquerdo {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 600px) {
+    .nav-esquerdo {
+        width: 10%;
+        height: calc(100vh - 42px);
+        float: left;
+    }
+}
+
+.nav-esquerdo ul span {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.nav-esquerdo ul li {
+    font-size: 20px;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.nav-esquerdo ul li:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.nav-direito {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+    float: right;
+    width: 20%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(white, crimson);
+}
+
+.nav-direito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.nav-direito .titulo {
+    font-size: 25px;
+}
+
+.conteudo-img img {
+    position: relative;
+    width: 150px;
+    animation-name: legal;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes legal {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 300px;
+        top: 0px;
+    }
+    50% {
+        left: 300px;
+        top: 300px;
+    }
+    75% {
+        left: 0px;
+        top: 300px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .drop,
+    .drop2,
+    drop3 {
+        float: none;
+        width: 100%;
+    }
+
+    .nav-esquerdo{
+        width: 100%;
+    }
+
+    .nav-direito{
+        width: 100%;
+    }
+}

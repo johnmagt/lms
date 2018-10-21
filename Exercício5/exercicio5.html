@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <link rel="stylesheet" href="exercicio5.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <nav class="menu-lateral">
+        <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <button id="abrir-menu">&#9776;</button>
+
+        <header>
+            <h2>Título da página</h2>
+        </header>
+
+        <div class="abrir-conteudo">
+
+            <h4 class="abrir1">Abrir conteúdo</h4>
+
+            <div class="conteudo1">
+                <p>Conteúdo</p>
+            </div>
+
+            <h4 class="abrir2">Abrir conteúdo</h4>
+
+            <div class="conteudo2">
+                <p>Contéudo</p>
+            </div>
+
+            <h4 class="abrir3">Abrir conteúdo</h4>
+
+            <div class="conteudo3">
+                <p>Contéudo</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    let butao = document.querySelector("#abrir-menu");
+    let menu = document.querySelector(".menu-lateral");
+    let content = document.querySelector(".content");
+
+
+    butao.addEventListener("click", function () {
+        menu.classList.toggle("menu-lateral-active");
+        content.classList.toggle("content-menu-active");
+    });
+
+    let abrir1 = document.querySelector(".abrir1");
+    let abrir2 = document.querySelector(".abrir2");
+    let abrir3 = document.querySelector(".abrir3");
+
+    let abrir_conteudo1 = document.querySelector(".conteudo1");
+    let abrir_conteudo2 = document.querySelector(".conteudo2");
+    let abrir_conteudo3 = document.querySelector(".conteudo3");
+
+    abrir1.addEventListener("click", function () {
+
+        abrir_conteudo1.classList.toggle("conteudo1-close");
+
+    });
+
+    abrir2.addEventListener("click", function () {
+
+        abrir_conteudo2.classList.toggle("conteudo2-close");
+
+    });
+
+    abrir3.addEventListener("click", function () {
+
+        abrir_conteudo3.classList.toggle("conteudo3-close");
+
+    });
+</script>
+
+</html>

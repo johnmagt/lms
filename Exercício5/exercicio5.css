@@ -1,0 +1,129 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.content {
+    position: absolute;
+    transition: all .3s;
+    left: 0;
+}
+
+.menu-lateral {
+    position: absolute;
+    background-color: purple;
+    color: white;
+    height: 100vh;
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+    left: -100%;
+
+    transition: all .3s;
+}
+
+.menu-lateral ul {
+    list-style: none;
+}
+
+.menu-lateral ul li {
+    padding: 15px;
+}
+
+.menu-lateral ul li:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.menu-lateral-active {
+    left: 0;
+}
+
+.content-menu-active {
+    left: 200px;
+}
+
+/* #abrir-menu{
+    display: none;
+} */
+
+@media screen and (min-width:480px) {
+    #abrir-menu {
+        display: none;
+    }
+
+    .menu-lateral {
+        left: 0;
+    }
+
+    .content {
+        left: 200px;
+    }
+}
+
+.abrir-conteudo h4 {
+
+    cursor: pointer;
+
+    padding: 10px;
+
+    width: 300px;
+    height: auto;
+
+    background-color: purple;
+    color: white;
+
+}
+
+.abrir-conteudo p {
+    padding: 30px;
+    border: 2px solid palevioletred;
+    border-radius: 0 0px 20px 20px;
+}
+
+.conteudo1 {
+    overflow: hidden;
+    max-height: 0;
+
+    transition: all .5s;
+}
+/* truque do max height não esquece, começa com 0 */
+
+.conteudo1-close {
+    max-height: 300px;   
+    transition: all .5s;
+    margin-bottom: 5px;
+}
+
+.conteudo2 {
+    overflow: hidden;
+    max-height: 0;
+
+    transition: all .5s;
+}
+
+.conteudo2-close {
+    max-height: 300px;
+   
+    transition: all .5s;
+    margin-bottom: 5px;
+}
+
+.conteudo3 {
+    overflow: hidden;
+    max-height: 0;
+
+    transition: all .5s;
+}
+
+.conteudo3-close {
+    max-height: 300px;
+   
+    transition: all .5s;
+
+    margin-bottom: 5px;
+}
